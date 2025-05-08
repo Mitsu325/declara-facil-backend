@@ -515,10 +515,10 @@ export class RequestService {
   ): string {
     switch (declaration.signatureType) {
       case 'requester':
-        declaration.footer = `${declaration.footer}\n \n{{nome}}\nRG nº {{rg}}/{{orgao_emissor}}\nCPF/MF nº {{cpf}}`;
+        declaration.footer = `\n \n{{nome}}\nRG nº {{rg}}/{{orgao_emissor}}\nCPF/MF nº {{cpf}}`;
         break;
       case 'director':
-        declaration.footer = `${declaration.footer}\n \n{{diretor_nome}}\nCPF: {{diretor_cpf}}\n{{diretor_cargo}}`;
+        declaration.footer = `\n \n{{diretor_nome}}\nCPF: {{diretor_cpf}}\n{{diretor_cargo}}`;
         break;
       default:
         break;

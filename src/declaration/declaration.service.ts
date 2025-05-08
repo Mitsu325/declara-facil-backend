@@ -19,7 +19,7 @@ export interface FormatDeclaration {
   type: string;
   title: string;
   content: string;
-  footer: string;
+  // footer: string;
   signatureType: SignatureType;
   createdAt: Date;
   updatedAt: Date;
@@ -43,7 +43,7 @@ export class DeclarationService {
       type: declaration.type,
       title: declaration.title,
       content: declaration.content,
-      footer: declaration.footer,
+      // footer: declaration.footer,
       signatureType: declaration.signatureType,
       active: declaration.is_active,
       createdBy: declaration.user.name,
@@ -115,7 +115,7 @@ export class DeclarationService {
     declaration.type = updateDeclarationDto.type ?? declaration.type;
     declaration.title = updateDeclarationDto.title ?? declaration.title;
     declaration.content = updateDeclarationDto.content ?? declaration.content;
-    declaration.footer = updateDeclarationDto.footer ?? declaration.footer;
+    // declaration.footer = updateDeclarationDto.footer ?? declaration.footer;
     declaration.signatureType = updateDeclarationDto.signatureType ?? declaration.signatureType;
 
     return this.declarationRepository.save(declaration);

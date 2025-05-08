@@ -18,10 +18,10 @@ export class CreateDeclarationDto {
   @ApiProperty({ description: 'Corpo do texto' })
   content: string;
 
-  @IsString()
-  @IsNotEmpty()
-  @ApiProperty({ description: 'Rodapé da declaração' })
-  footer: string;
+  // @IsString()
+  // @IsNotEmpty()
+  // @ApiProperty({ description: 'Rodapé da declaração' })
+  // footer: string;
 
   @IsEnum(SignatureType)
   @IsNotEmpty()

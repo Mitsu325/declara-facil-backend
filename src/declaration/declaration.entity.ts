@@ -32,7 +32,7 @@ export class Declaration {
   @Column()
   content: string;
 
-  @Column()
+  @Column({ nullable: true })
   footer: string;
 
   @Column({
