@@ -30,8 +30,7 @@ async function bootstrap() {
   SwaggerModule.setup('api', app, document);
 
   app.enableCors({
-    // origin: 'https://declara-facil-frontend.vercel.app',
-    origin: 'http://localhost:4200',
+    origin: 'https://declara-facil-frontend.vercel.app',
     credentials: true,
   });
 
